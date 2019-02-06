@@ -1,0 +1,62 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'
+             xmlns:html='urn:import:org.gwtbootstrap3.client.ui.html'
+             xmlns:b='urn:import:org.gwtbootstrap3.client.ui'>
+    <b:Modal closable="true" fade="true" dataBackdrop="STATIC" dataKeyboard="true">
+        <b:ModalBody>
+            <b:Container fluid="true">
+                <b:Row>
+                    <b:Column size="MD_6">
+                        <html:Span text="Логин"/>
+                        <b:Input type="TEXT" ui:field="login"/>
+                    </b:Column>
+                    <b:Column size="MD_6">
+                        <html:Span text="Пароль"/>
+                        <b:Input type="PASSWORD" ui:field="password"/>
+                    </b:Column>
+                </b:Row>
+                <b:Row>
+                    <b:Column size="MD_6">
+                        <html:Span text="Имя"/>
+                        <b:Input type="TEXT" ui:field="name"/>
+                    </b:Column>
+                    <b:Column size="MD_6">
+                        <html:Span text="Фамилия"/>
+                        <b:Input type="TEXT" ui:field="lastname"/>
+                    </b:Column>
+                </b:Row>
+                <b:Row>
+                    <b:Column size="MD_6">
+                        <html:Span text="Отчество"/>
+                        <b:Input type="TEXT" ui:field="patronymic"/>
+                    </b:Column>
+                </b:Row>
+                <b:Row>
+                    <b:Column size="MD_6">
+                        <html:Span text="Email"/>
+                        <b:Input type="EMAIL" ui:field="email"/>
+                    </b:Column>
+                </b:Row>
+                <b:Row>
+                    <b:Column size="MD_6">
+                        <html:Span text="Администратор"/>
+                        <b:CheckBox ui:field="admin"/>
+                    </b:Column>
+                </b:Row>
+            </b:Container>
+        </b:ModalBody>
+        <b:ModalFooter>
+            <b:Container fluid="true">
+                <b:Row>
+                    <b:Column size="MD_6">
+                        <b:Button ui:field="saveButton" text="Сохранить" icon="SAVE" type="SUCCESS"/>
+                    </b:Column>
+                    <b:Column size="MD_6">
+                        <b:Button ui:field="cancelButton" text="Закрыть" type="PRIMARY"/>
+                    </b:Column>
+                </b:Row>
+            </b:Container>
+
+        </b:ModalFooter>
+    </b:Modal>
+</ui:UiBinder>
